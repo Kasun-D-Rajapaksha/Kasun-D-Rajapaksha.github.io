@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasun Rajapaksha | QA Engineer — Manual & Automation Testing</title>
+  <meta name="description" content="Kasun Rajapaksha is a Quality Assurance Engineer with 3 years of manual and automation testing experience. Skilled in Cypress, Playwright, Selenium, Postman, JMeter and Agile Scrum." />
+  <meta name="author" content="Kasun Rajapaksha" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kasun Rajapaksha | QA Engineer" />
+  <meta property="og:description" content="Quality Assurance Engineer — Manual & Automation | Cypress | Playwright | API Testing" />
+  <meta property="og:url" content="https://kasun-rajapaksha.github.io/" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>KR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text">
+        <p class="hero-greeting reveal">Hi there, I'm</p>
+        <h1 class="hero-name reveal">Kasun Rajapaksha</h1>
+        <h2 class="hero-title reveal">
+          Quality Assurance Engineer <span class="accent">—</span> Manual &amp; Automation
+        </h2>
+        <p class="hero-typing reveal">
+          <span class="typing-prefix">I specialize in</span>
+          <span class="typed-text" id="typed-text"></span><span class="typing-cursor">|</span>
+        </p>
+        <p class="hero-location reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Kandy, Sri Lanka &middot; Working remotely worldwide
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="assets/Kasun-QA-Engineer-Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+        </div>
+        <div class="hero-socials reveal">
+          <a href="https://www.linkedin.com/in/kasun--rajapaksha" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <!-- TODO: Replace with your actual GitHub profile URL -->
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:rajapaksha.deeptha@gmail.com" aria-label="Email">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+          <a href="tel:+94711996674" aria-label="Phone">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+        </div>
+        <div class="hero-photo reveal">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-clip">
+              <img src="assets/profile-dark.png" alt="Kasun Rajapaksha — QA Engineer" width="380" height="380" />
+            </div>
+          </div>
+          <div class="hero-photo-badge">
+            <span class="badge-dot"></span> Open to opportunities
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-tag reveal">01. About</p>
+        <h2 class="section-title reveal">Quality is not an act,<br />it's a <span class="accent">habit</span>.</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>Quality Assurance Engineer</strong> with <strong>3 years of hands-on experience</strong>
+              in both manual and automation testing across diverse domains — fintech and fundraising platforms,
+              AI-powered security systems, and healthcare workforce management.
+            </p>
+            <p>
+              Currently at <strong>EquityMatch</strong> (London, UK), I design and implement automated test suites
+              with <strong>Cypress</strong>, run thorough manual and exploratory testing, and work embedded in
+              Agile Scrum teams to make sure quality is baked in from sprint planning to release.
+            </p>
+            <p>
+              I hold a <strong>BSc (Hons) in Information Technology</strong> from the Sri Lanka Institute of
+              Information Technology (SLIIT) and I've co-authored an <strong>IEEE-published research paper</strong>
+              on intelligent traffic control using computer vision. I believe great QA is about curiosity,
+              precision, and never assuming — always verifying.
+            </p>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <span class="stat-number" data-count="3" data-suffix="+">0</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="3" data-suffix="">0</span>
+              <span class="stat-label">Companies Worldwide</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="8" data-suffix="+">0</span>
+              <span class="stat-label">Tools &amp; Frameworks</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="1" data-suffix="">0</span>
+              <span class="stat-label">IEEE Publication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-tag reveal">02. Skills</p>
+        <h2 class="section-title reveal">My QA <span class="accent">toolbox</span></h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Test Automation</h3>
+            <ul class="skill-list">
+              <li><span>Cypress</span><span class="skill-bar"><span class="skill-fill" style="--level: 90%"></span></span></li>
+              <li><span>Playwright</span><span class="skill-bar"><span class="skill-fill" style="--level: 75%"></span></span></li>
+              <li><span>Selenium</span><span class="skill-bar"><span class="skill-fill" style="--level: 65%"></span></span></li>
+              <li><span>Mochawesome Reports</span><span class="skill-bar"><span class="skill-fill" style="--level: 80%"></span></span></li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Manual Testing</h3>
+            <ul class="skill-list">
+              <li><span>Test Case Design</span><span class="skill-bar"><span class="skill-fill" style="--level: 95%"></span></span></li>
+              <li><span>Regression Testing</span><span class="skill-bar"><span class="skill-fill" style="--level: 90%"></span></span></li>
+              <li><span>Mobile Testing</span><span class="skill-bar"><span class="skill-fill" style="--level: 80%"></span></span></li>
+              <li><span>Exploratory Testing</span><span class="skill-bar"><span class="skill-fill" style="--level: 85%"></span></span></li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>API &amp; Performance</h3>
+            <ul class="skill-list">
+              <li><span>Postman</span><span class="skill-bar"><span class="skill-fill" style="--level: 85%"></span></span></li>
+              <li><span>API Testing</span><span class="skill-bar"><span class="skill-fill" style="--level: 80%"></span></span></li>
+              <li><span>JMeter</span><span class="skill-bar"><span class="skill-fill" style="--level: 70%"></span></span></li>
+              <li><span>Performance Testing</span><span class="skill-bar"><span class="skill-fill" style="--level: 65%"></span></span></li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>Tools &amp; Process</h3>
+            <ul class="skill-list">
+              <li><span>JIRA</span><span class="skill-bar"><span class="skill-fill" style="--level: 90%"></span></span></li>
+              <li><span>GitLab / Git</span><span class="skill-bar"><span class="skill-fill" style="--level: 80%"></span></span></li>
+              <li><span>Agile Scrum</span><span class="skill-bar"><span class="skill-fill" style="--level: 90%"></span></span></li>
+              <li><span>Test Documentation</span><span class="skill-bar"><span class="skill-fill" style="--level: 90%"></span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-tag reveal">03. Experience</p>
+        <h2 class="section-title reveal">Where I've <span class="accent">worked</span></h2>
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker current" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Quality Assurance Engineer</h3>
+                <span class="badge badge-current">Current</span>
+              </div>
+              <p class="timeline-company">EquityMatch &middot; London, UK (Remote)</p>
+              <p class="timeline-period">Feb 2025 — Present</p>
+              <p class="timeline-project">Project: Educational, social media &amp; fundraising platform for startups and investors</p>
+              <ul class="timeline-duties">
+                <li>Designed and implemented automated test suites with <strong>Cypress</strong>, improving test coverage and regression efficiency</li>
+                <li>Conducted thorough manual testing to identify and document defects, ensuring high-quality releases</li>
+                <li>Performed <strong>API testing with Postman</strong>, validating request/response behavior and backend functionality</li>
+                <li>Authored detailed test cases from user stories and acceptance criteria</li>
+                <li>Managed bug tracking and defect lifecycle in <strong>JIRA</strong></li>
+                <li>Active contributor in Agile Scrum ceremonies — planning, stand-ups, refinements, and retrospectives</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Cypress</span><span class="tag">Postman</span><span class="tag">API Testing</span><span class="tag">JIRA</span><span class="tag">Agile Scrum</span><span class="tag">Manual Testing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Junior Quality Assurance Engineer</h3>
+              </div>
+              <p class="timeline-company">promiseQ &middot; Berlin, Germany (Remote)</p>
+              <p class="timeline-period">Jul 2024 — Oct 2024</p>
+              <p class="timeline-project">Project: Promise Qube — AI-based security alarm &amp; video analytics system</p>
+              <ul class="timeline-duties">
+                <li>Built automated web test cases with <strong>Cypress</strong> for an AI-driven false-alarm filtering platform</li>
+                <li>Performed <strong>API testing with Postman</strong>, verifying request/response behavior and backend integrity</li>
+                <li>Tracked and managed defects using <strong>GitLab</strong> issue boards</li>
+                <li>Collaborated with cross-functional teams to validate requirements end-to-end</li>
+                <li>Worked in an <strong>Agile Scrum</strong> team, participating in sprint planning, stand-ups, and retrospectives</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Cypress</span><span class="tag">Postman</span><span class="tag">GitLab</span><span class="tag">API Testing</span><span class="tag">Agile Scrum</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Junior Quality Assurance Engineer</h3>
+              </div>
+              <p class="timeline-company">OnePassport &middot; Melbourne, Australia (Remote)</p>
+              <p class="timeline-period">Jul 2023 — Jul 2024</p>
+              <p class="timeline-project">Project: OnePassport — healthcare workforce risk management system</p>
+              <ul class="timeline-duties">
+                <li>Automated web application testing with <strong>Cypress</strong>, cutting regression testing time significantly</li>
+                <li>Generated interactive test execution reports with <strong>Mochawesome</strong> for clear stakeholder reporting</li>
+                <li>Performed <strong>mobile manual testing</strong> across devices and operating systems</li>
+                <li>Conducted API testing with Postman covering functionality, performance, and error handling</li>
+                <li>Logged and tracked defects through resolution in JIRA</li>
+                <li>Worked in an <strong>Agile Scrum</strong> environment across sprint ceremonies, from planning to retrospectives</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Cypress</span><span class="tag">Mochawesome</span><span class="tag">Mobile Testing</span><span class="tag">Postman</span><span class="tag">JIRA</span><span class="tag">Agile Scrum</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Internal Systems Developer Intern</h3>
+              </div>
+              <p class="timeline-company">Waterlily Labs (Pvt) Ltd &middot; Sri Lanka</p>
+              <p class="timeline-period">Jan 2022 — Jul 2022</p>
+              <ul class="timeline-duties">
+                <li>Contributed to internal software systems development, building a developer's perspective that now strengthens my QA work</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Web Development</span><span class="tag">Internal Systems</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <p class="section-tag reveal">04. Projects</p>
+        <h2 class="section-title reveal">QA case <span class="accent">studies</span></h2>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-domain">Fintech / Fundraising</span>
+              <svg class="icon project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>EquityMatch Platform</h3>
+            <p>
+              End-to-end QA for a platform connecting startups with investors — covering fundraising flows,
+              social features, and educational content. Built a Cypress automation suite alongside structured
+              manual regression cycles and Postman API testing, keeping release quality high in fast Agile sprints.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Cypress</span><span class="tag">Postman</span><span class="tag">Manual Testing</span><span class="tag">JIRA</span><span class="tag">Agile</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-domain">AI / Security</span>
+              <svg class="icon project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Promise Qube — AI Alarm System</h3>
+            <p>
+              Tested an AI video-analytics platform that eliminates over 95% of false alarms in intruder
+              detection. Combined Cypress UI automation with Postman API testing to validate the accuracy-critical
+              pipeline from camera event to human review.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Cypress</span><span class="tag">Postman</span><span class="tag">API Testing</span><span class="tag">GitLab</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-domain">Healthcare / Compliance</span>
+              <svg class="icon project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>OnePassport Workforce System</h3>
+            <p>
+              QA for a healthcare workforce risk-management system where compliance mistakes carry real-world
+              consequences. Reduced regression time with Cypress automation, produced Mochawesome reports for
+              stakeholders, and validated the mobile experience across devices.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Cypress</span><span class="tag">Mochawesome</span><span class="tag">Mobile Testing</span><span class="tag">JIRA</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-domain">Research / IEEE Publication</span>
+              <svg class="icon project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>SmartGo — Intelligent Traffic Control</h3>
+            <p>
+              Co-authored IEEE-published research on a real-time traffic control system using video monitoring and
+              YOLOv5 computer vision — achieving ~92% vehicle detection accuracy and 88.6% red-light violator
+              detection, with priority handling for emergency vehicles.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Computer Vision</span><span class="tag">YOLOv5</span><span class="tag">Image Processing</span>
+            </div>
+            <a href="https://ieeexplore.ieee.org/document/10025205" target="_blank" rel="noopener" class="project-link">
+              Read the paper on IEEE Xplore
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Certifications & Education ===== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <p class="section-tag reveal">05. Credentials</p>
+        <h2 class="section-title reveal">Certifications &amp; <span class="accent">education</span></h2>
+        <div class="credentials-grid">
+
+          <div class="credentials-col reveal">
+            <h3 class="credentials-heading">Certifications</h3>
+            <a class="credential-card" href="https://udemy.com/certificate/UC-a794c2c4-4432-4b67-a96c-afb3cf91beb8/" target="_blank" rel="noopener">
+              <div class="credential-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <div>
+                <h4>Cypress: Web Automation Testing from Zero to Hero</h4>
+                <p>Udemy &middot; Issued Nov 2023</p>
+              </div>
+            </a>
+            <a class="credential-card" href="https://ude.my/UC-6492e721-74c8-4b38-8078-5bfed7bf6ae9" target="_blank" rel="noopener">
+              <div class="credential-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <div>
+                <h4>Learn JMeter from Scratch on Live Apps — Performance Testing</h4>
+                <p>Udemy &middot; Issued May 2024</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="credentials-col reveal">
+            <h3 class="credentials-heading">Education</h3>
+            <div class="credential-card">
+              <div class="credential-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <h4>BSc (Hons) in Information Technology</h4>
+                <p>Sri Lanka Institute of Information Technology (SLIIT) &middot; 2019 — 2023</p>
+              </div>
+            </div>
+            <div class="credential-card">
+              <div class="credential-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div>
+                <h4>IEEE Publication — "SmartGo"</h4>
+                <p>Intelligent Traffic Controlling System with Violators Detection &middot; IEEE Xplore, 2023</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <p class="section-tag reveal">06. Testimonials</p>
+        <h2 class="section-title reveal">What colleagues <span class="accent">say</span></h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal">
+            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <p>
+              "Kasun quickly adapted to our testing processes and demonstrated a strong attention to detail in
+              identifying and addressing software issues. His enthusiasm for learning and growth was evident, and
+              he consistently sought opportunities to enhance his skills. He collaborated effectively with the team,
+              contributing to a positive and productive work environment."
+            </p>
+            <footer>
+              <span class="testimonial-name">Former Team Lead</span>
+              <span class="testimonial-role">LinkedIn Recommendation</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <p>
+              "Kasun is a dependable individual who consistently contributes to the team and takes the initiative
+              to work efficiently with minimal supervision. His proactive approach ensures that tasks are completed
+              efficiently and on time, making him a valuable asset to any project. I commend his positive attitude
+              at work and for being a team player."
+            </p>
+            <footer>
+              <span class="testimonial-name">Anjana Wijesundara</span>
+              <span class="testimonial-role">Colleague &middot; LinkedIn Recommendation</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container contact-container">
+        <p class="section-tag reveal">07. Contact</p>
+        <h2 class="section-title reveal">Let's build quality <span class="accent">together</span></h2>
+        <p class="contact-lead reveal">
+          I'm open to QA engineering opportunities, freelance testing projects, and connecting with fellow
+          quality enthusiasts. Drop me a message — I usually reply within a day.
+        </p>
+        <!-- mailto-based form: no backend required -->
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="contact-alt reveal">
+          <p>Or reach me directly:</p>
+          <div class="contact-links">
+            <a href="mailto:rajapaksha.deeptha@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              rajapaksha.deeptha@gmail.com
+            </a>
+            <a href="tel:+94711996674">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +94 71 199 6674
+            </a>
+            <a href="https://www.linkedin.com/in/kasun--rajapaksha" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              linkedin.com/in/kasun--rajapaksha
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-logo"><span class="logo-bracket">&lt;</span>KR<span class="logo-bracket">/&gt;</span></p>
+      <p class="footer-text">Designed &amp; built by Kasun Rajapaksha &middot; &copy; <span id="year"></span></p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/kasun--rajapaksha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <!-- TODO: Replace with your actual GitHub profile URL -->
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
