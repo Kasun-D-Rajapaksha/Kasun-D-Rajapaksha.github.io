@@ -14,13 +14,12 @@ kasun-portfolio/
 
 ## Before publishing — things to customize
 
-Search for `TODO` in `index.html` and replace the placeholders:
+Already configured:
 
-1. **GitHub profile URL** — hero social icons and footer (`index.html`). Currently points to `https://github.com/`.
-2. **Resume** — add your resume PDF as `assets/resume.pdf` (the "Download Resume" button links to it).
-3. **Open Graph URL** — update the `og:url` meta tag in `index.html` once you know your final site URL.
-
-Already configured: profile photo (`assets/profile.png`), email (`rajapaksha.deeptha@gmail.com`), and phone (`+94 71 199 6674`).
+- GitHub profile: [github.com/Kasun-D-Rajapaksha](https://github.com/Kasun-D-Rajapaksha)
+- Resume: `assets/Kasun-QA-Engineer-Resume.pdf`
+- Profile photo, email (`rajapaksha.deeptha@gmail.com`), and phone (`+94 71 199 6674`)
+- Live site: [kasun-d-rajapaksha.github.io](https://kasun-d-rajapaksha.github.io/)
 
 Optional tweaks:
 
